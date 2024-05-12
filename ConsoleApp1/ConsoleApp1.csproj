@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<OutputType>Exe</OutputType>
+	<TargetFramework>net8.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AIComponents.Data\AIComponents.Data.csproj" />
+    <ProjectReference Include="..\AiComponents.Graph\AiComponents.Graph.csproj" />
+    <ProjectReference Include="..\AIComponents.SearchComponents\AIComponents.SearchComponents.csproj" />
+    <ProjectReference Include="..\AiComponents.Services\AiComponents.Services.csproj" />
+    <ProjectReference Include="..\AIComponents\AIComponents.csproj" />
+  </ItemGroup>
+
+  <!--<PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PublishAot>true</PublishAot>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>-->
+
+</Project>

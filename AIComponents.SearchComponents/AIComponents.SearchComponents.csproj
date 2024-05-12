@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Infrastructure\BaseSearchComponents\BaseBreadthFirstSearchV2.cs" />
+    <Compile Remove="Infrastructure\BaseSearchComponents\BaseBreadthFirstSearchVV3.cs" />
+    <Compile Remove="Infrastructure\BaseSearchComponents\BaseDepthFirstSearch.cs" />
+    <Compile Remove="Infrastructure\BaseSearchComponents\BaseDepthFirstSearchV1.cs" />
+    <Compile Remove="Infrastructure\BaseSearchComponents\Result\BaseBreadthFirstSearchV2.cs" />
+    <Compile Remove="Infrastructure\BaseSearchComponents\Result\BaseBreadthFirstSearchVV3.cs" />
+    <Compile Remove="Infrastructure\BaseSearchComponents\Result\BaseDepthFirstSearchV1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AIComponents.Common\AIComponents.Common.csproj" />
+    <ProjectReference Include="..\AIComponents.Data\AIComponents.Data.csproj" />
+    <ProjectReference Include="..\AiComponents.Graph\AiComponents.Graph.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Infrastructure\BaseSearchComponents\Result\" />
+    <Folder Include="Infrastructure\Interfaces\Tree\" />
+    <Folder Include="SearchTree\" />
+  </ItemGroup>
+
+</Project>
